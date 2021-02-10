@@ -1,0 +1,126 @@
+/**********************************
+LastEditTime: 2021-02-09 20:05:01
+Author: Amero
+Description: 
+Version: 
+FilePath: \MyProject\Clock-02.08\Clock.css
+************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #329bcf;
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Clock-02.08/clock.png);
+    background-color: rgba(255, 255, 255, 0.89);
+    background-size: cover;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    box-shadow:  0 -15px 15px rgba(255, 255, 255, 0.05),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        10px 15px 15px rgba(0, 0, 0, 0.322),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #5e5c5d;
+    border-radius: 50%;
+    z-index: 100000;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: absolute;
+
+}
+
+.clock .hour,
+.hr {
+    width: 160px;
+    height: 160px;
+}
+
+.clock .min,
+.mn {
+    width: 190px;
+    height: 190px;
+}
+
+.clock .sec,
+.sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #5e5c5d;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+
+}
+
+.mn:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: rgba(168, 165, 165, 0.849);
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+
+}
+
+.sc:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #ff1053;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+
+}
+#Btn-change{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
