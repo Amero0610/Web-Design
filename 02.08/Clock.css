@@ -1,9 +1,9 @@
 /**********************************
-LastEditTime: 2021-02-09 20:05:01
+LastEditTime: 2021-02-28 20:05:42
 Author: Amero
 Description: 
 Version: 
-FilePath: \MyProject\Clock-02.08\Clock.css
+FilePath: \My-Project\02.08\Clock.css
 ************************************/
 * {
     margin: 0;
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Clock-02.08/clock.png);
+    background: url(./clock.png);
     background-color: rgba(255, 255, 255, 0.89);
     background-size: cover;
     border: 20px solid #fff;
@@ -112,15 +112,4 @@ body {
     z-index: 12;
     border-radius: 6px 6px 0 0;
 
-}
-#Btn-change{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100px;
-    height: 30px;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    outline: none;
 }
